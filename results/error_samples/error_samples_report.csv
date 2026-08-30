@@ -1,0 +1,31 @@
+True Class,Predicted Class,Confidence,Error Type
+Apple___Cedar_apple_rust,Potato___Late_blight,0.5783,Low Confidence
+Apple___Black_rot,Squash___Powdery_mildew,0.7619,Low Confidence
+Potato___Early_blight,Tomato___Bacterial_spot,0.7157,Low Confidence
+Grape___healthy,Apple___healthy,0.5348,Low Confidence
+Apple___healthy,Soybean___healthy,0.6414,Low Confidence
+Strawberry___healthy,Potato___Early_blight,0.5383,Low Confidence
+Peach___Bacterial_spot,Tomato___Tomato_Yellow_Leaf_Curl_Virus,0.7388,Low Confidence
+Potato___healthy,Raspberry___healthy,0.6861,Low Confidence
+Orange___Haunglongbing_(Citrus_greening),Grape___Esca_(Black_Measles),0.7540,Low Confidence
+Raspberry___healthy,Orange___Haunglongbing_(Citrus_greening),0.7027,Low Confidence
+Tomato___Target_Spot,Cherry_(including_sour)___Powdery_mildew,0.8678,High Confidence
+Tomato___Septoria_leaf_spot,Grape___Black_rot,0.8722,High Confidence
+Cherry_(including_sour)___healthy,Cherry_(including_sour)___Powdery_mildew,0.5565,Low Confidence
+Tomato___Spider_mites Two-spotted_spider_mite,Peach___healthy,0.7564,Low Confidence
+Potato___healthy,Tomato___Tomato_mosaic_virus,0.7425,Low Confidence
+Tomato___Target_Spot,Cherry_(including_sour)___Powdery_mildew,0.5585,Low Confidence
+Tomato___Target_Spot,Grape___Black_rot,0.8863,High Confidence
+Squash___Powdery_mildew,Tomato___Leaf_Mold,0.7780,Low Confidence
+Grape___Leaf_blight_(Isariopsis_Leaf_Spot),"Pepper,_bell___healthy",0.5683,Low Confidence
+Potato___healthy,Apple___Black_rot,0.5535,Low Confidence
+"Pepper,_bell___healthy",Potato___Late_blight,0.8825,High Confidence
+Grape___healthy,"Pepper,_bell___healthy",0.7645,Low Confidence
+Apple___Black_rot,Tomato___Leaf_Mold,0.8130,High Confidence
+Tomato___Leaf_Mold,Tomato___Septoria_leaf_spot,0.6984,Low Confidence
+Apple___healthy,Grape___Esca_(Black_Measles),0.8676,High Confidence
+Tomato___Spider_mites Two-spotted_spider_mite,Tomato___Bacterial_spot,0.7912,Low Confidence
+"Pepper,_bell___Bacterial_spot",Tomato___Target_Spot,0.5816,Low Confidence
+Tomato___Septoria_leaf_spot,"Pepper,_bell___healthy",0.6308,Low Confidence
+Apple___Apple_scab,Tomato___healthy,0.5499,Low Confidence
+Raspberry___healthy,Corn_(maize)___healthy,0.7960,Low Confidence

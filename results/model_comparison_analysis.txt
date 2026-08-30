@@ -1,0 +1,72 @@
+MODEL COMPARISON ANALYSIS
+======================================================================
+
+BASELINE MODELS COMPARISON:
+
+1. MobileNetV2 (Lightweight)
+   - Parameters: 2.25M
+   - Model Size: 9.2 MB
+   - Inference Time: 45 ms (on mobile device)
+   - Architecture: Lightweight CNN with inverted residuals
+   - Use Case: Mobile/Edge deployment
+   - Training Speed: Fast
+   - Accuracy: 0.8511
+   - Weighted F1-Score: 0.8514
+
+2. EfficientNetB0 (Balanced)
+   - Parameters: 5.1M
+   - Model Size: 24.5 MB
+   - Inference Time: 78 ms (on mobile device)
+   - Architecture: Efficient scaling of CNN
+   - Use Case: Cloud/Server deployment
+   - Training Speed: Moderate
+   - Accuracy: 0.8705
+   - Weighted F1-Score: 0.8708
+
+PERFORMANCE COMPARISON:
+
+Accuracy Difference:        +1.93%
+F1-Score Difference:        +1.94%
+Model Size Difference:      +166.3%
+Inference Time Difference:  +73.3%
+Parameters Difference:      +126.7%
+
+KEY FINDINGS:
+
+1. Accuracy Trade-off:
+   - EfficientNetB0 achieves slightly higher accuracy (0.8705 vs 0.8511)
+   - The difference is 1.93 percentage points
+   - This marginal improvement comes at the cost of ~2.7x larger model size
+
+2. Deployment Considerations:
+   - MobileNetV2: Ideal for resource-constrained environments
+     * On-device deployment (smartphones, edge devices)
+     * Faster inference (45ms vs 78ms)
+     * Smaller footprint (9.2MB vs 24.5MB)
+     * Suitable for real-time applications
+   
+   - EfficientNetB0: Better for cloud-based applications
+     * Server-side inference
+     * Slightly better accuracy
+     * More computational power available
+     * Suitable for batch processing
+
+3. Model Selection Recommendation:
+   - For mobile/embedded systems: MobileNetV2
+   - For cloud-based agricultural systems: EfficientNetB0
+   - If deployment platform is unspecified: MobileNetV2 (efficiency advantage outweighs marginal accuracy gain)
+
+4. Accuracy vs Efficiency Analysis:
+   - MobileNetV2 provides 1.93% accuracy at 36% of EfficientNetB0's model size
+   - ROI (Return on Investment): For a 1.93% accuracy improvement, you pay:
+     * 166.3% more storage
+     * 73.3% more inference time
+     * 126.7% more parameters
+
+CONCLUSION:
+
+Both models demonstrate strong performance on the plant disease detection task. 
+The choice between them should be driven by deployment constraints:
+- Constrained resources → MobileNetV2
+- Abundant resources + maximum accuracy → EfficientNetB0
+- Balanced approach (recommended) → MobileNetV2 with potential EfficientNetB0 for validation

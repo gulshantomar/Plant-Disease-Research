@@ -1,0 +1,59 @@
+PLANT DISEASE DETECTION MODEL - ERROR ANALYSIS
+======================================================================
+
+OVERALL PERFORMANCE
+- Accuracy: 0.8511
+- Macro F1-Score: 0.8500
+- Weighted F1-Score: 0.8514
+
+BEST-PERFORMING CLASSES (Top 5):
+
+1. Cherry_(including_sour)___healthy
+   F1-Score: 0.9565 | Precision: 1.0000 | Recall: 0.9167 | Support: 36
+2. Tomato___Leaf_Mold
+   F1-Score: 0.9423 | Precision: 0.9423 | Recall: 0.9423 | Support: 52
+3. Corn_(maize)___Common_rust_
+   F1-Score: 0.9091 | Precision: 0.8696 | Recall: 0.9524 | Support: 42
+4. Soybean___healthy
+   F1-Score: 0.9009 | Precision: 0.9091 | Recall: 0.8929 | Support: 56
+5. Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+   F1-Score: 0.8991 | Precision: 0.8596 | Recall: 0.9423 | Support: 52
+
+WORST-PERFORMING CLASSES (Bottom 5):
+
+1. Potato___Late_blight
+   F1-Score: 0.7957 | Precision: 0.7551 | Recall: 0.8409 | Support: 44
+2. Pepper,_bell___Bacterial_spot
+   F1-Score: 0.7949 | Precision: 0.7750 | Recall: 0.8158 | Support: 38
+3. Tomato___Early_blight
+   F1-Score: 0.7917 | Precision: 0.7600 | Recall: 0.8261 | Support: 46
+4. Apple___healthy
+   F1-Score: 0.7792 | Precision: 0.7895 | Recall: 0.7692 | Support: 39
+5. Strawberry___Leaf_scorch
+   F1-Score: 0.7647 | Precision: 0.7222 | Recall: 0.8125 | Support: 32
+
+MOST CONFUSED CLASS PAIRS:
+
+1. Pepper,_bell___healthy <-> Potato___Late_blight: 4 confusion cases
+2. Cherry_(including_sour)___Powdery_mildew <-> Tomato___Target_Spot: 3 confusion cases
+3. Corn_(maize)___Common_rust_ <-> Tomato___Septoria_leaf_spot: 3 confusion cases
+4. Grape___healthy <-> Tomato___Late_blight: 3 confusion cases
+5. Pepper,_bell___Bacterial_spot <-> Potato___healthy: 3 confusion cases
+6. Apple___Apple_scab <-> Grape___Leaf_blight_(Isariopsis_Leaf_Spot): 2 confusion cases
+7. Apple___Apple_scab <-> Peach___Bacterial_spot: 2 confusion cases
+8. Apple___Black_rot <-> Apple___Cedar_apple_rust: 2 confusion cases
+9. Apple___Black_rot <-> Squash___Powdery_mildew: 2 confusion cases
+10. Apple___Cedar_apple_rust <-> Tomato___Early_blight: 2 confusion cases
+
+POSSIBLE EXPLANATIONS FOR DIFFICULT CLASSES:
+- Classes with lower recall may have fewer samples or less distinctive features
+- Confused class pairs likely share similar disease symptoms or visual characteristics
+- High-precision/low-recall classes may have distinctive features but insufficient training diversity
+- Classes with balanced precision/recall have more consistent model performance
+
+RECOMMENDATIONS:
+1. Collect more samples for worst-performing classes
+2. Review visual similarity between confused class pairs
+3. Investigate if symptoms in confused classes are actually visually similar
+4. Consider data augmentation for low-support classes
+5. Analyze false positives to improve decision boundaries
