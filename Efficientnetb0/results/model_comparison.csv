@@ -1,0 +1,2 @@
+model,accuracy,macro_f1,weighted_f1,params_m,size_mb,latency_ms,train_minutes,device
+efficientnetb0,0.9945367630320965,0.9944730678828873,0.9945331554877208,4.098249,60.46401,357.11948571999983,37.0467805425326,GPU

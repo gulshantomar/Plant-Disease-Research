@@ -1,0 +1,11 @@
+{
+  "model": "densenet121",
+  "accuracy": 0.985374459367175,
+  "macro_f1": 0.9852806997159059,
+  "weighted_f1": 0.9853993456926072,
+  "params_m": 7.076454,
+  "size_mb": 50.217833,
+  "latency_ms": 625.0145446700026,
+  "train_minutes": 61.39305607875188,
+  "device": "GPU"
+}

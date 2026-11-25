@@ -1,7 +1,0 @@
-Metric,MobileNetV2,EfficientNetB0
-Model,MobileNetV2,EfficientNetB0
-Accuracy,0.8511,0.8705
-Macro F1-Score,0.85,0.8709
-Weighted F1-Score,0.8514,0.8708
-Model Size (MB),9.2,24.5
-Parameters (M),2.25,5.1

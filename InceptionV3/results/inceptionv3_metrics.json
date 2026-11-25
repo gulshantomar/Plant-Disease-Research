@@ -1,0 +1,11 @@
+{
+  "model": "inceptionv3",
+  "accuracy": 0.9922604142954701,
+  "macro_f1": 0.9921220632444636,
+  "weighted_f1": 0.9922557080778438,
+  "params_m": 21.880646,
+  "size_mb": 258.471651,
+  "latency_ms": 377.74308349999956,
+  "train_minutes": 61.706567736466724,
+  "device": "GPU"
+}

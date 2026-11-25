@@ -1,0 +1,11 @@
+{
+  "model": "efficientnetb0",
+  "accuracy": 0.9945367630320965,
+  "macro_f1": 0.9944730678828873,
+  "weighted_f1": 0.9945331554877208,
+  "params_m": 4.098249,
+  "size_mb": 60.46401,
+  "latency_ms": 357.11948571999983,
+  "train_minutes": 37.0467805425326,
+  "device": "GPU"
+}

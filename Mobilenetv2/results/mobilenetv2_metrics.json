@@ -1,0 +1,11 @@
+{
+  "model": "mobilenetv2",
+  "accuracy": 0.9903824265877532,
+  "macro_f1": 0.9903069914280526,
+  "weighted_f1": 0.9904157335564391,
+  "params_m": 2.306662,
+  "size_mb": 41.551328,
+  "latency_ms": 184.68255048000174,
+  "train_minutes": 30.21834642489751,
+  "device": "GPU"
+}
